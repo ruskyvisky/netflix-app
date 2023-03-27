@@ -12,6 +12,8 @@ export default function Auth() {
       currentVariant === "login" ? "register" : "login"
     );
   }, []);
+
+  
   return (
     <div className="h-full w-full relative bg-[url('/images/background.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
       <div className="bg-black w-full h-full lg:bg-opacity-50">
@@ -24,17 +26,17 @@ export default function Auth() {
               {variant === "login" ? "Sign in" : "Register"}
             </h2>
             <div className="flex flex-col gap-4">
-              { variant === "register" && 
-                
+              {variant === "register" && (
                 <Input
-                id="name"
-                label="Name"
-                value={name}
-                type="name"
-                onChange={(e: any) => {
-                  setName(e.target.value);
-                }}
-              />}
+                  id="name"
+                  label="Name"
+                  value={name}
+                  type="name"
+                  onChange={(e: any) => {
+                    setName(e.target.value);
+                  }}
+                />
+              )}
               <Input
                 id="email"
                 label="Email"
@@ -58,7 +60,9 @@ export default function Auth() {
               {variant === "login" ? "Login" : "Sign up"}
             </button>
             <p className="text-neutral-500 mt-12">
-              {variant === "login" ? "First time using Netflix? " : "Already have an account? " }
+              {variant === "login"
+                ? "First time using Netflix? "
+                : "Already have an account? "}
               <span
                 className="text-white ml-1 hover:underline cursor-pointer"
                 onClick={toggleVariant}
