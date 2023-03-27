@@ -1,14 +1,31 @@
-node_modules
-.next
-out
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-.vscode
-.DS_Store
+# node_modules klasörü
+node_modules/
+
+# .env dosyaları
 .env
+.env.local
+.env.*.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# Derlenmiş dosyalar
+*.log
+*.pem
+
+# Geçici dosyalar
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Yedek dosyalar
+*.bak
+*.backup
+*.old
+
+# VS Code önbellek dosyaları
+.vscode/
