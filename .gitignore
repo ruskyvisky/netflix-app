@@ -2,7 +2,7 @@
 node_modules/
 
 # .env dosyaları
-.env
+test.env
 .env.local
 .env.*.local
 .env.development
