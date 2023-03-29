@@ -13,6 +13,7 @@ const Watch = () => {
     <div className="h-screen w-screen bg-black">
       <nav className="fixed w-full p-4 z-10 flex flex-row items-center gap-8 bg-black bg-opacity-70">
         <AiOutlineArrowLeft
+        size={30}
           onClick={() => router.push("/")}
           className="w-4 md:w-10 text-white cursor-pointer hover:opacity-80 transition"
         />

@@ -1,14 +1,16 @@
 import React from "react";
 import { BsFillPlayFill } from "react-icons/bs";
+import {BiChevronDown} from "react-icons/bi";
 import FavoriteButton from "./favoriteButton";
 import { useRouter } from "next/router";
+import useInfoModalStore from "@/hooks/useInfoModelStore";
 
 interface MovieCardProps {
   data: Record<string, any>;
 }
 const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
   const date = new Date();
-  
+  const {openModal} = useInfoModalStore();
   const currentYear = date.getFullYear();
   const router = useRouter();
   return (
@@ -96,6 +98,11 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
               className="text-black" size={20} />
             </div>
             <FavoriteButton movieId={data?.id}/>
+            <div onClick={()=>{
+               openModal(data?.id)
+            }} className="cursor-pointer ml-auto group/item w-6 h-6 lg:w-10 lg:h-10  border-white border-2  rounded-full  flex items-center justify-center transition hover:border-neutral-300">
+<BiChevronDown size={20} className="text-white group-hover/item:text-neutral-300   "/>
+            </div>
           </div>
           <p className="text-green-400 font-semibold mt-4">
             New <span className="text-white ">{currentYear}</span>
