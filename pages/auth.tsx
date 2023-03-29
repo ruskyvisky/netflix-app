@@ -3,12 +3,10 @@ import React, { useCallback } from "react";
 import { useState } from "react";
 import axios from "axios";
 import { signIn } from "next-auth/react";
-import { useRouter } from "next/router";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 
 export default function Auth() {
-  const router = useRouter();
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
@@ -24,14 +22,13 @@ export default function Auth() {
       signIn("credentials", {
         email,
         password,
-        redirect: false,
-        callbackUrl: "/",
+
+        callbackUrl: "/profiles",
       });
-      router.push("/");
     } catch (error) {
       console.log(error);
     }
-  }, [email, password, router]);
+  }, [email, password]);
   const register = useCallback(async () => {
     try {
       await axios.post("/api/register", {
@@ -93,11 +90,11 @@ export default function Auth() {
               {variant === "login" ? "Login" : "Sign up"}
             </button>
             <div className="flex flex-row items-center gap-4 mt-8 justify-center ">
-              <div 
-              onClick={()=>{
-                signIn("google", { callbackUrl: "/" });
-              }}
-              className="w-10 h-10 
+              <div
+                onClick={() => {
+                  signIn("google", { callbackUrl: "/profiles" });
+                }}
+                className="w-10 h-10 
               bg-white 
               rounded-full 
               flex 
@@ -105,14 +102,15 @@ export default function Auth() {
               justify-center 
               cursor-pointer 
               hover:opacity-80 
-              transition">
+              transition"
+              >
                 <FcGoogle size={30}></FcGoogle>
               </div>
-              <div 
-              onClick={()=>{
-                signIn("github", { callbackUrl: "/" });
-              }}
-              className="w-10 h-10 
+              <div
+                onClick={() => {
+                  signIn("github", { callbackUrl: "/profiles" });
+                }}
+                className="w-10 h-10 
               bg-white 
               rounded-full 
               flex 
@@ -120,7 +118,8 @@ export default function Auth() {
               justify-center 
               cursor-pointer 
               hover:opacity-80 
-              transition">
+              transition"
+              >
                 <FaGithub size={30}></FaGithub>
               </div>
             </div>
