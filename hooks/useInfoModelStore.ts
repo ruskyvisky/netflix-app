@@ -1,5 +1,7 @@
 import { create } from 'zustand';
 
+// useInfoModalStore is a custom hook used to manage the state of a modal
+// It provides an interface for setting the movieId, opening and closing the modal, and checking if the modal is open
 export interface ModalStoreInterface {
   movieId?: string;
   isOpen: boolean;

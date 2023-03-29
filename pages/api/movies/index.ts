@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import prismadb from '@/lib/prismadb';
 import serverAuth from "@/lib/serverAuth";
-
+// Fetching Movies from the database
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
     if (req.method !== 'GET') {
