@@ -2,5 +2,11 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/api/random": "pages/api/random.js",
+  "/api/favoriteList": "pages/api/favoriteList.js",
+  "/api/movies": "pages/api/movies.js",
+  "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js",
+  "/api/favorite": "pages/api/favorite.js",
+  "/api/current": "pages/api/current.js",
   "/": "pages/index.js"
 }
