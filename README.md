@@ -24,14 +24,14 @@ To set up this project, you will need to create an `.env` file in the root direc
 - `NEXTAUTH_SECRET` - the secret for NextAuth.js
 
 ## Photos
+<![Login Page](https://user-images.githubusercontent.com/46764372/228687062-b5c16a96-33e1-442a-9034-a3c8a0fca766.png)
+![Main Page](https://user-images.githubusercontent.com/46764372/228687089-0f455235-6698-4119-90b2-27eea9d4fe7f.png)
 
-![img]https://i.imgur.com/MOHbcJA.png[/img]
-![img]https://i.imgur.com/U6Lunae.png[/img]
 
 ## Video
 
 You can see  full project in video
-[![Project Video](https://www.youtube.com/watch?v=F8ZHNwERk2Y)
+https://www.youtube.com/watch?v=F8ZHNwERk2Y
 
 
 Thank you for checking out this project!
