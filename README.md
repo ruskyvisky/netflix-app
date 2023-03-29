@@ -25,13 +25,13 @@ To set up this project, you will need to create an `.env` file in the root direc
 
 ## Photos
 
-![Login Page](https://imgur.com/a/dp6kh9H)
-![Main Page](https://imgur.com/U6Lunae)
+![img]https://i.imgur.com/MOHbcJA.png[/img]
+![img]https://i.imgur.com/U6Lunae.png[/img]
 
 ## Video
 
 You can see  full project in video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F8ZHNwERk2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Project Video](https://www.youtube.com/watch?v=F8ZHNwERk2Y)
 
 
 Thank you for checking out this project!
