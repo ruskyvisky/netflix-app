@@ -25,6 +25,8 @@ To set up this project, you will need to create an `.env` file in the root direc
 
 ## Video
 
-Check out this project in action in this video: [https://youtu.be/F8ZHNwERk2Y]
+Check out this project in action in this video: 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F8ZHNwERk2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 Thank you for checking out this project!
