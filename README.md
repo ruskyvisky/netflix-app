@@ -23,10 +23,15 @@ To set up this project, you will need to create an `.env` file in the root direc
 - `NEXTAUTH_JWT_SECRET` - the JWT secret for NextAuth.js
 - `NEXTAUTH_SECRET` - the secret for NextAuth.js
 
+## Photos
+
+![Login Page](https://imgur.com/a/dp6kh9H)
+![Main Page](https://imgur.com/U6Lunae)
+
 ## Video
 
-Check out this project in action in this video: 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F8ZHNwERk2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+You can see  full project in video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F8ZHNwERk2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Thank you for checking out this project!
